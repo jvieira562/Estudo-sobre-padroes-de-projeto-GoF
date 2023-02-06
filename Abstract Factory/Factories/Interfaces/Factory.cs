@@ -2,8 +2,15 @@
 
 namespace Abstract_Factory.Factories.Interfaces
 {
-    public interface Factory
+    public abstract class Factory
     {
-        public Computador CriarComputador();
+        public virtual Computador CriarComputador() 
+        {
+            return null;
+        }
+        public virtual Carro CriarCarro()
+        {
+            return null;
+        }
     }
 }
