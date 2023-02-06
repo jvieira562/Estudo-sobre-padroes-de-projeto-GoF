@@ -1,9 +1,8 @@
 ﻿namespace Abstract_Factory.Produtos.Interfaces
 {
-    public interface Computador
+    public abstract class Computador
     {
-        public int Cod_Computador { get; set; }
-        public string Marca { get; set; }
-        public double Preco { get; set; }
+        public static int quantidade;
+        public abstract string Jogar();
     }
 }
