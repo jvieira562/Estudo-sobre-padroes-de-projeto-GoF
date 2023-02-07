@@ -9,8 +9,12 @@ public class Program
 {
     static void Main()
     {
-        Factory factory = new AFactory();
+        Factory factoryA = new AFactory();
+        Factory factoryB = new BFactory();
         
-        Carro carro =  factory.CriarCarro();
+        Carro carroA =  factoryA.CriarCarro();
+        Carro carroB = factoryB.CriarCarro();
+
+        Console.WriteLine($"carroA.Acelerar);
     }
 }
